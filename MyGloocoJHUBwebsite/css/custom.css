@@ -1,0 +1,509 @@
+/********** common setting **********/
+#logo{
+    color: #fff;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: .3s ease-in-out !important
+}
+
+.navbar-toggler {
+  padding: 0; /* Remove default padding */
+  border: none; /* Remove default border */
+  background: transparent; /* Ensure background is transparent */
+  max-width: 50px;
+}
+
+.navbar-toggler-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%; /* Ensure the icon fills the button */
+  height: 100%; /* Ensure the icon fills the button */
+}
+
+.navbar-custom { 
+    background-color: rgba(0, 0, 0, 0.882); 
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text { 
+    color: #4D7E3E; 
+}
+
+.navbar-brand {
+    max-width: 100px;
+}
+
+.nav-link {
+    color: #67aa53; 
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.custom-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.custom-list-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+.custom-list-content {
+  flex: 1;
+  font-size: 18px;
+  padding-left: 40px;
+}
+.custom-list-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.custom-list-description {
+  margin: 0;
+  color: #555;
+}
+@media (max-width: 576px) {
+  .custom-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .custom-list-icon {
+    margin-bottom: 0.5rem;
+  }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.0rem !important;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+#nav-logo-img {
+    width:80%; 
+    height:80%;
+}
+#logo-img {
+    width:70%; 
+    height:70%;
+}
+#problem-img {
+  width: 70%;
+  height: 70%;
+  margin-left: 70px;
+}
+#soln-img {
+  width: 70%;
+  height: 70%;
+}
+#crsl-img1 {
+  width: 60%;
+  height: 60%;
+}
+#crsl-img2 {
+  width: 60%;
+  height: 60%;
+}
+#crsl-img3 {
+  width: 60%;
+  height: 60%;
+}
+#crsl-img4 {
+  width: 60%;
+  height: 60%;
+}
+#jkuat-img {
+  width: 20%;
+  height: 20%;
+}
+#jhub-img {
+  width: 40%;
+  height: 40%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  top: 50%;  /* Position vertically at the middle */
+  transform: translateY(-50%);  /* Adjust for the height of the element itself */
+  z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 30px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+}
+
+.carousel-control-prev-icon {
+    margin-left: 0px;
+}
+
+.carousel-control-next-icon {
+    margin-left: 40px;
+}
+
+.custom-indicators {
+  background-color: #33333380; /* Dark background color */
+  border-radius: 55px;
+  max-width: 200px; /* Adjust this value to your desired width */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Make the active indicator white */
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5); /* Light color for inactive indicators */
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev-icon {
+    margin-left: 80px; 
+  }
+
+  .carousel-control-next-icon {
+    margin-left: 80px; 
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    top: 50%;  /* Position vertically at the middle */
+    transform: translateY(-50%);  /* Adjust for the height of the element itself */
+    z-index: 1;
+  }
+
+  .carousel-control-prev-icon:after,
+  .carousel-control-next-icon:after {
+    font-size: 55px;
+  }
+
+  .custom-heading {
+    font-size: 32px;
+  }
+  .custom-paragraph {
+    font-size: 20px;
+  }
+
+  #problem-img {
+    width: 80%;
+    height: 80%;
+  }
+  #nav-logo-img {
+    width:80%; 
+    height:80%;
+  }
+  #logo-img {
+    width:50%; 
+    height:50%;
+  }
+  #soln-img {
+    width: 100%;
+    height: 100%;
+  }
+  #crsl-img1 {
+    width: 100%;
+    height: 100%;
+  }
+  #crsl-img2 {
+    width: 100%;
+    height: 100%;
+  }
+  #crsl-img3 {
+    width: 100%;
+    height: 100%;
+  }
+  #crsl-img4 {
+    width: 100%;
+    height: 100%;
+  }
+  #jkuat-img {
+    width: 7%;
+    height: 7%;
+  }
+  #jhub-img {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+.nowrap-text {
+  white-space: nowrap;
+}
+
+.custom-heading {
+    font-size: 32px;
+}
+.custom-paragraph {
+    font-size: 20px;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+   
+}
+#banner header h1 {
+    font-size: larger;
+    font-weight: 400;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(180deg, #00FFAD 50%, #ffffff 100%);
+}
+
+#feature-second {
+    background:  white;
+}
+
+#feature-third {
+    background: linear-gradient(0deg, #00FFAD 50%, #ffffff 100%);
+}
+
+#feature-fourth {
+    background: linear-gradient(180deg, #00FFAD 50%, #ffffff 100%);
+}
+
+#feature-fifth {
+    background: linear-gradient(180deg, #ffffff 33%, #00FFAD 100%);
+}
+
+#feature-last {
+    background: white;
+}
+
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+} 
+#contactinfo a{
+    color: #00FFAD;
+} 
+
+
+#team ul li{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+}
+#team ul li p{
+    color: #fff;
+}
+#team ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#team ul li a:hover{
+    color: black;
+}
+button{
+    width: 120px;
+    padding: 3px 0;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #00FFAD;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #00FFAD;
+    height: 100%;
+    width: 0%;
+    border-radius: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.pill-button {
+  width: 120px;
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #00FFAD;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.pill-button:hover span{
+    width: 100%;
+}
+.pill-button:hover {
+    border: none;
+}
+.pill-button:hover a{
+    color:white;
+}
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+
+
